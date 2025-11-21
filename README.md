@@ -264,7 +264,7 @@ When contributing, please ensure all additions follow ethical guidelines and are
 
 For issues, questions, or security vulnerability reports, please use the GitHub repository issue tracker or contact the developer directly.
 
-**Repository:** https://github.com/MohamedKrd/0xZAXOYI
+**Repository:** https://github.com/MohamedKrd/Sensitive-Files-Scanner
 
 ---
 
