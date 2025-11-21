@@ -16,7 +16,7 @@ Critical / Warning / Safe - Auto-detected domain - JSON export - Local
 scan history - Category toggles - Manifest V3, concurrency control, soft
 404 detection
 
-Installation git clone https://github.com/MohamedKrd/0xZAXOYI.git cd
+Installation git clone https://github.com/MohamedKrd/Sensitive-Files-Scanner.git cd
 0xZAXOYI Load unpacked in chrome://extensions/ after enabling Developer
 Mode.
 
