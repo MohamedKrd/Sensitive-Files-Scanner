@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0xZAXOYI - Settings</title>
+    <link rel="stylesheet" href="../css/cyber-style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">0xZAXOYI</div>
+            <div class="tagline">Settings</div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="nav">
+            <a href="popup.html" class="nav-btn">Dashboard</a>
+            <a href="settings.html" class="nav-btn active">Settings</a>
+            <a href="history.html" class="nav-btn">History</a>
+        </div>
+
+        <!-- Scan Configuration -->
+        <div class="card">
+            <h3 style="color: var(--neon-green); margin-bottom: 15px; font-size: 16px;">Scan Categories</h3>
+            <div class="checkbox-group" id="categoriesContainer">
+                <!-- Dynamically populated -->
+            </div>
+        </div>
+
+        <!-- Advanced Settings -->
+        <div class="card">
+            <h3 style="color: var(--neon-green); margin-bottom: 15px; font-size: 16px;">Advanced Settings</h3>
+
+            <div class="form-group">
+                <label for="requestTimeout">Request Timeout (ms)</label>
+                <input type="text" id="requestTimeout" value="5000">
+            </div>
+
+            <div class="form-group">
+                <label for="delayBetween">Delay Between Requests (ms)</label>
+                <input type="text" id="delayBetween" value="100">
+            </div>
+
+            <div class="form-group">
+                <label for="maxConcurrent">Max Concurrent Requests</label>
+                <select id="maxConcurrent">
+                    <option value="5">5 (Slow & Safe)</option>
+                    <option value="10" selected>10 (Balanced)</option>
+                    <option value="20">20 (Fast)</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Ethical Guidelines -->
+        <div class="card" style="background: rgba(255, 51, 102, 0.05); border-color: #ff3366;">
+            <h3 style="color: #ff3366; margin-bottom: 10px; font-size: 14px;">📋 Ethical Guidelines</h3>
+            <ul style="font-size: 11px; line-height: 1.8; color: var(--text-secondary); padding-left: 20px;">
+                <li>Only scan websites you own or have written permission to test</li>
+                <li>This tool is for educational and authorized security testing only</li>
+                <li>Never use this tool for malicious purposes or unauthorized access</li>
+                <li>Report any findings responsibly to the website owner</li>
+                <li>Respect rate limits and do not overload servers</li>
+                <li>Understand that unauthorized scanning may violate laws</li>
+            </ul>
+        </div>
+
+        <button class="btn btn-primary btn-full" id="saveSettingsBtn">Save Settings</button>
+    </div>
+
+    <script src="../js/utils.js"></script>
+    <script src="../js/settings.js"></script>
+</body>
+
+</html>

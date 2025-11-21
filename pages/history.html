@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0xZAXOYI - Scan History</title>
+    <link rel="stylesheet" href="../css/cyber-style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">0xZAXOYI</div>
+            <div class="tagline">Scan History</div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="nav">
+            <a href="popup.html" class="nav-btn">Dashboard</a>
+            <a href="settings.html" class="nav-btn">Settings</a>
+            <a href="history.html" class="nav-btn active">History</a>
+        </div>
+
+        <!-- Actions -->
+        <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+            <button class="btn btn-secondary" id="clearHistoryBtn" style="flex: 1;">Clear All History</button>
+            <button class="btn btn-secondary" id="exportAllBtn" style="flex: 1;">Export All</button>
+        </div>
+
+        <!-- History List -->
+        <div class="results-container" id="historyContainer">
+            <div class="empty-state">
+                <div class="empty-state-icon">📋</div>
+                <div class="empty-state-text">No scan history yet.<br>Start your first scan from the dashboard.</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/utils.js"></script>
+    <script src="../js/history.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>0xZAXOYI - Dashboard</title>
+  <link rel="stylesheet" href="../css/cyber-style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="logo">0xZAXOYI</div>
+      <div class="tagline">Ethical Security Scanner</div>
+    </div>
+
+    <!-- Ethical Warning -->
+    <div class="ethical-warning">
+      <strong>⚠️ ETHICAL USE ONLY</strong>
+      Only use this tool on websites where you have <strong>explicit permission</strong>. 
+      Unauthorized scanning may be illegal. This is for educational security testing only.
+    </div>
+
+    <!-- Quick Stats -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-value" id="totalScans">0</div>
+        <div class="stat-label">Total Scans</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="totalFindings">0</div>
+        <div class="stat-label">Findings</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="criticalFindings">0</div>
+        <div class="stat-label">Critical</div>
+      </div>
+    </div>
+
+    <!-- Scan Form -->
+    <div class="card">
+      <div class="form-group">
+        <label for="targetDomain">Target Domain</label>
+        <input 
+          type="url" 
+          id="targetDomain" 
+          placeholder="https://example.com" 
+          autocomplete="off"
+        >
+      </div>
+      <button class="btn btn-primary btn-full" id="startScanBtn">
+        <span id="btnText">Start Scan</span>
+      </button>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav">
+      <a href="popup.html" class="nav-btn active">Dashboard</a>
+      <a href="settings.html" class="nav-btn">Settings</a>
+      <a href="history.html" class="nav-btn">History</a>
+    </div>
+
+    <!-- Info Section -->
+    <div class="card">
+      <h3 style="color: var(--neon-green); margin-bottom: 10px; font-size: 14px;">About This Tool</h3>
+      <p style="font-size: 12px; line-height: 1.6; color: var(--text-secondary);">
+        This extension performs passive security testing by checking for publicly accessible sensitive files. 
+        It uses simple GET requests and does not exploit or modify any data.
+      </p>
+    </div>
+  </div>
+
+  <script src="../js/utils.js"></script>
+  <script src="../js/popup.js"></script>
+</body>
+</html>

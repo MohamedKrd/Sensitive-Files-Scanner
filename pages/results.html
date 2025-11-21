@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0xZAXOYI - Scan Results</title>
+    <link rel="stylesheet" href="../css/cyber-style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">0xZAXOYI</div>
+            <div class="tagline">Scan Results</div>
+        </div>
+
+        <!-- Scan Info -->
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                <div>
+                    <div style="font-family: 'Orbitron', monospace; color: var(--neon-green); font-size: 14px;"
+                        id="scanDomain">
+                        Loading...
+                    </div>
+                    <div style="font-size: 11px; color: var(--text-secondary);" id="scanDate">
+                        Scan in progress...
+                    </div>
+                </div>
+                <div id="scanStatus"
+                    style="font-size: 11px; padding: 5px 10px; background: rgba(0, 255, 65, 0.2); color: var(--neon-green); border-radius: 4px;">
+                    SCANNING
+                </div>
+            </div>
+        </div>
+
+        <!-- Progress -->
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+            </div>
+            <div class="progress-text" id="progressText">0 / 0 checked</div>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value" style="color: var(--status-safe);" id="safeCount">0</div>
+                <div class="stat-label">Safe</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" style="color: var(--status-warning);" id="warningCount">0</div>
+                <div class="stat-label">Warning</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" style="color: var(--status-danger);" id="dangerCount">0</div>
+                <div class="stat-label">Critical</div>
+            </div>
+        </div>
+
+        <!-- Filter -->
+        <div class="card">
+            <label for="filterResults">Filter Results</label>
+            <select id="filterResults">
+                <option value="all">Show All</option>
+                <option value="danger">Critical Only</option>
+                <option value="warning">Warnings Only</option>
+                <option value="safe">Safe Only</option>
+            </select>
+        </div>
+
+        <!-- Results -->
+        <div class="results-container" id="resultsContainer">
+            <div class="empty-state">
+                <div class="empty-state-icon">🔍</div>
+                <div class="empty-state-text">Starting scan...</div>
+            </div>
+        </div>
+
+        <!-- Actions -->
+        <div style="display: flex; gap: 10px; margin-top: 20px;">
+            <button class="btn btn-secondary" id="exportBtn" style="flex: 1;">Export Results</button>
+            <button class="btn btn-secondary" id="saveHistoryBtn" style="flex: 1;">Save to History</button>
+        </div>
+
+        <div style="margin-top: 10px; display: flex; gap: 10px;">
+            <button class="btn btn-secondary" id="newScanBtn" style="flex: 1;">New Scan</button>
+            <a href="popup.html" class="btn btn-primary"
+                style="flex: 1; text-align: center; text-decoration: none; line-height: 40px;">Dashboard</a>
+        </div>
+    </div>
+
+    <script src="../js/utils.js"></script>
+    <script src="../js/results.js"></script>
+</body>
+
+</html>

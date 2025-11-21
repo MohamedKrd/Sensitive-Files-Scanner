@@ -1,0 +1,40 @@
+<!-- Placeholder icon - Replace with actual PNG icons -->
+<svg width="128" height="128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ff41;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00cc33;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="128" height="128" fill="#0a0e1a" rx="20"/>
+  
+  <!-- Circuit pattern -->
+  <g stroke="#00ff41" stroke-width="2" fill="none" opacity="0.3">
+    <line x1="20" y1="20" x2="60" y2="20"/>
+    <line x1="60" y1="20" x2="60" y2="40"/>
+    <line x1="68" y1="20" x2="108" y2="20"/>
+    <line x1="108" y1="20" x2="108" y2="60"/>
+    <circle cx="60" cy="20" r="3" fill="#00ff41"/>
+    <circle cx="108" cy="60" r="3" fill="#00ff41"/>
+  </g>
+  
+  <!-- Shield -->
+  <path d="M 64 30 L 40 40 L 40 70 Q 40 90 64 100 Q 88 90 88 70 L 88 40 Z" 
+        fill="url(#grad)" filter="url(#glow)" opacity="0.9"/>
+  
+  <!-- Lock -->
+  <rect x="56" y="60" width="16" height="18" rx="2" fill="#0a0e1a"/>
+  <circle cx="64" cy="55" r="8" stroke="#0a0e1a" stroke-width="4" fill="none"/>
+  
+  <!-- Code brackets -->
+  <text x="20" y="115" font-family="monospace" font-size="24" fill="#00ff41" filter="url(#glow)">&lt;/&gt;</text>
+</svg>
