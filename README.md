@@ -28,6 +28,9 @@ The developers assume no liability for misuse of this software. Use responsibly.
 
 The extension scans for over 800 common security misconfigurations including exposed backup files, configuration files, environment variables, version control system exposure, CMS-specific vulnerabilities, framework configuration files, cloud service credentials, admin panel paths, database interfaces, API documentation endpoints, and security-sensitive files.
 
+
+
+![0xZAXOYI Logo](0xZAXOYI.png)
 ---
 
 ## Features
