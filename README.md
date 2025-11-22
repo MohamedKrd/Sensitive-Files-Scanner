@@ -26,7 +26,7 @@ The developers assume no liability for misuse of this software. Use responsibly.
 
 0xZAXOYI Sensitive File Scanner is a Chrome extension designed for ethical hackers, security researchers, and penetration testers. It automates the discovery of publicly accessible sensitive files on web applications during authorized security assessments.
 
-The extension scans for over 800 common security misconfigurations including exposed backup files, configuration files, environment variables, version control system exposure, CMS-specific vulnerabilities, framework configuration files, cloud service credentials, admin panel paths, database interfaces, API documentation endpoints, and security-sensitive files.
+The extension scans for over 500 common security misconfigurations including exposed backup files, configuration files, environment variables, version control system exposure, CMS-specific vulnerabilities, framework configuration files, cloud service credentials, admin panel paths, database interfaces, API documentation endpoints, and security-sensitive files.
 
 
 
